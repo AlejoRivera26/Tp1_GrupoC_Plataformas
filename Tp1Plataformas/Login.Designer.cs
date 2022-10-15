@@ -37,47 +37,50 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(265, 115);
+            this.label1.Location = new System.Drawing.Point(353, 142);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.Size = new System.Drawing.Size(81, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Contraseña";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(265, 59);
+            this.label2.Location = new System.Drawing.Point(353, 73);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.Size = new System.Drawing.Size(0, 17);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Usuario";
             // 
             // txtUser
             // 
-            this.txtUser.Location = new System.Drawing.Point(400, 62);
+            this.txtUser.Location = new System.Drawing.Point(533, 76);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(100, 20);
+            this.txtUser.Size = new System.Drawing.Size(132, 22);
             this.txtUser.TabIndex = 2;
             this.txtUser.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtContra
             // 
-            this.txtContra.Location = new System.Drawing.Point(400, 115);
+            this.txtContra.Location = new System.Drawing.Point(533, 142);
+            this.txtContra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtContra.Name = "txtContra";
-            this.txtContra.Size = new System.Drawing.Size(100, 20);
+            this.txtContra.Size = new System.Drawing.Size(132, 22);
             this.txtContra.TabIndex = 3;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtContra);
             this.Controls.Add(this.txtUser);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Login";
             this.Text = "Login";
             this.ResumeLayout(false);
