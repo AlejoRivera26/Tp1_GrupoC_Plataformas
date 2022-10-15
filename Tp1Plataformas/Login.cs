@@ -34,6 +34,15 @@ namespace Tp1Plataformas
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtUser.Text) && string.IsNullOrWhiteSpace(txtContra.Text))
+            {
+                MessageBox.Show("Porfavor ingresa los siguientes datos faltantes");
+            }
+            else
+            {
+                
+            }
+            Close();
 
         }
 
