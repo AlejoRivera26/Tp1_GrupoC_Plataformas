@@ -36,5 +36,10 @@ namespace Tp1Plataformas
         {
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
