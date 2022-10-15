@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Tp1Plataformas
 {
-    class Usuario
+    class Usuario : Banco
     {
+        public int id { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
-        public string DNI { get; set; }
+        public int DNI { get; set; }
         public string Mail { get; set; }
         public string Contra { get; set; }
         public int intentosFallidos { get; set; }
@@ -20,7 +21,7 @@ namespace Tp1Plataformas
         private List<Pago> pagos { get; }
         private List<Tarjeta_de_Credito> tarjetas { get; }
 
-        public Usuario(string nombre, string apellido, string dNI, string mail, string contra, int intentosFallidos, bool bloqueado, List<Caja_de_Ahorro> cajasList, List<Plazo_Fijo> plazoFijo, List<Pago> pagos, List<Tarjeta_de_Credito> tarjetas)
+        public Usuario(string nombre, string apellido, int dNI, string mail, string contra, int intentosFallidos, bool bloqueado, List<Caja_de_Ahorro> cajasList, List<Plazo_Fijo> plazoFijo, List<Pago> pagos, List<Tarjeta_de_Credito> tarjetas)
         {
             Nombre = nombre;
             Apellido = apellido;
@@ -34,6 +35,22 @@ namespace Tp1Plataformas
             this.pagos = pagos;
             this.tarjetas = tarjetas;
         }
+
+        public Usuario(string nombre, string apellido, int dNI, string mail, string contra, bool bloqueado) : this(nombre, apellido)
+        {
+            DNI = dNI;
+            Mail = mail;
+            Contra = contra;
+            this.bloqueado = bloqueado;
+        }
+
+        public Usuario(string nombre, string contra)
+        {
+            Nombre = nombre;
+            Contra = contra;
+        }
+
+
     }
 
 }

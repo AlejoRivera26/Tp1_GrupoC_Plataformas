@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Tp1Plataformas
 {
-    class Plazo_Fijo
+    class Plazo_Fijo : Banco
     {
+        public int id { get; set; }
         public Usuario titular { get; set; }
         public float monto { get; set; }
         public DateTime fechaIni { get; set; }

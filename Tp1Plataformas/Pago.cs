@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Tp1Plataformas
 {
-    class Pago
+    class Pago : Banco
     {
+        public int id { get; set; }
         public Usuario usuario { get; set; }
         public float monto { get; set; }
         public Boolean pagado { get; set; }

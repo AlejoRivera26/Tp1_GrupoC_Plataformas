@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Tp1Plataformas
 {
-    class Tarjeta_de_Credito
+    class Tarjeta_de_Credito : Banco
     {
+        public int id { get; set; }
         public Usuario titular { get; set; }
         public int numero { get; set; }
         public int codigoSeguridad { get; set; }

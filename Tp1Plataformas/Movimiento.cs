@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Tp1Plataformas
 {
-    class Movimiento
+    class Movimiento : Banco
     {
+        public int id { get; set; }
         public Caja_de_Ahorro caja;
         public string detalle { get; set; }
         public float monto { get; set; }

@@ -36,7 +36,7 @@ namespace Tp1Plataformas
         {
             if (string.IsNullOrWhiteSpace(txtUser.Text) && string.IsNullOrWhiteSpace(txtContra.Text))
             {
-                MessageBox.Show("Porfavor ingresa los siguientes datos faltantes");
+                MessageBox.Show("Porfavor ingresa los datos faltantes");
             }
             else
             {
@@ -47,6 +47,11 @@ namespace Tp1Plataformas
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtContra_TextChanged(object sender, EventArgs e)
         {
 
         }

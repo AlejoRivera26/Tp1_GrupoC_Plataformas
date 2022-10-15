@@ -16,6 +16,7 @@ namespace Tp1Plataformas
         public Register()
         {
             InitializeComponent();
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -66,13 +67,18 @@ namespace Tp1Plataformas
             }
             else
             {
-                Usuario usuario = new Usuario(txtUser.Text, txtApellido.Text, txtDNI.Text, txtMail.Text, txtContra.Text);
+                
                 
             }
             Close();
         }
 
         private void textMail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUser_TextChanged(object sender, EventArgs e)
         {
 
         }

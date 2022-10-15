@@ -59,7 +59,7 @@
             // txtUser
             // 
             this.txtUser.Location = new System.Drawing.Point(421, 155);
-            this.txtUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUser.Margin = new System.Windows.Forms.Padding(4);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(132, 22);
             this.txtUser.TabIndex = 2;
@@ -68,10 +68,11 @@
             // txtContra
             // 
             this.txtContra.Location = new System.Drawing.Point(421, 222);
-            this.txtContra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtContra.Margin = new System.Windows.Forms.Padding(4);
             this.txtContra.Name = "txtContra";
             this.txtContra.Size = new System.Drawing.Size(132, 22);
             this.txtContra.TabIndex = 3;
+            this.txtContra.TextChanged += new System.EventHandler(this.txtContra_TextChanged);
             // 
             // label3
             // 
