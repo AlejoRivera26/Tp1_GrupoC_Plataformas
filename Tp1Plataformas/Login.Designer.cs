@@ -28,20 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtUser = new System.Windows.Forms.TextBox();
+            this.txtContra = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(265, 115);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Contraseña";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(265, 59);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Usuario";
+            // 
+            // txtUser
+            // 
+            this.txtUser.Location = new System.Drawing.Point(400, 62);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(100, 20);
+            this.txtUser.TabIndex = 2;
+            this.txtUser.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // txtContra
+            // 
+            this.txtContra.Location = new System.Drawing.Point(400, 115);
+            this.txtContra.Name = "txtContra";
+            this.txtContra.Size = new System.Drawing.Size(100, 20);
+            this.txtContra.TabIndex = 3;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.txtContra);
+            this.Controls.Add(this.txtUser);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Login";
             this.Text = "Login";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.TextBox txtContra;
     }
 }

@@ -16,5 +16,10 @@ namespace Tp1Plataformas
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
